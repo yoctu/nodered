@@ -4,6 +4,9 @@ const RED = require("node-red");
 
 const app = express();
 app.use("/",express.static("public"));
+app.use(require('express-status-monitor')({
+  title: 'Status'
+}))
 
 const server = http.createServer(app);
 
@@ -11,7 +14,7 @@ var settings = {
     httpAdminRoot:"/nodered",
     httpNodeRoot: "/api",
     userDir:"/opt/app/nodered/",
-    credentialSecret: "yoctu-secret",
+    credentialSecret: "my-secret",
     editorTheme: {
        projects: {
            enabled: true

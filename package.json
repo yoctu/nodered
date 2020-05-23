@@ -13,7 +13,8 @@
   "author": "lav@yoctu.com",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "node-red": "^1.0.6"
+    "express": "*",
+    "node-red": "*",
+    "express-status-monitor": "*"
   }
 }
