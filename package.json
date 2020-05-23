@@ -1,0 +1,19 @@
+{
+  "name": "nodered",
+  "version": "1.0.0",
+  "description": "NodeRed template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "NodeRed"
+  ],
+  "author": "lav@yoctu.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-red": "^1.0.6"
+  }
+}
