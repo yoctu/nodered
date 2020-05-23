@@ -1,0 +1,2 @@
+# nodered
+NodeRed Docker Template
