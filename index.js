@@ -13,7 +13,8 @@ const server = http.createServer(app);
 var settings = {
     httpAdminRoot:"/nodered",
     httpNodeRoot: "/api",
-    userDir:"/opt/app/nodered/",
+    userDir: process.cwd() + "/nodered/",
+    flowFile: "flows_yoctu.json",
     credentialSecret: "my-secret",
     editorTheme: {
        projects: {
