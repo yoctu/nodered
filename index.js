@@ -1,8 +1,14 @@
 const http = require('http');
 const express = require("express");
 const RED = require("node-red");
-
+const debug = require('debug')
 const app = express();
+
+app.use(function (req, res, next) {
+  debug('yoctu:api')(req.protocol + '://' + req.headers.host + req.url)
+  next()
+})
+
 app.use("/",express.static("public"));
 app.use(require('express-status-monitor')({
   title: 'Status'
